@@ -28,12 +28,9 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(data['model_state'])
 model.eval()
 
-
-
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET', 'HEAD'])  # Allow both GET and HEAD methods
 def index():
     return jsonify({"message": "Chatbot API is running"}), 200
-
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -70,5 +67,3 @@ import os
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
-
-
