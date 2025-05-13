@@ -1,0 +1,75 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "What's up?",
+        "Good morning"
+      ],
+      "responses": [
+        "Hello! How can I help you?",
+        "Hi there! What can I do for you?",
+        "Hey! How may I assist you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later!",
+        "Take care!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "I appreciate it",
+        "Much appreciated"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem!",
+        "Happy to help!"
+      ]
+    },
+    {
+      "tag": "college_location",
+      "patterns": [
+        "Where is the college located?",
+        "College address",
+        "How do I reach the college?",
+        "Location of the campus"
+      ],
+      "responses": [
+        "The college is located at 123 College Street, Cityname.",
+        "You can find the campus at 123 College Street, just off Main Road.",
+        "The college is situated in the center of Cityname at 123 College Street."
+      ]
+    },
+    {
+      "tag": "admin_office",
+      "patterns": [
+        "Where is the admin office?",
+        "How can I reach administration?",
+        "Location of the admin office",
+        "Administration office details"
+      ],
+      "responses": [
+        "The admin office is located in the main building, Room 101.",
+        "You can find the admin office on the ground floor of the central block.",
+        "Administration is in Room 101, near the main entrance."
+      ]
+    }
+  ]
+}
