@@ -28,7 +28,12 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(data['model_state'])
 model.eval()
 
-bot_name = "Sam"
+
+
+@app.route('/', methods=['GET'])
+def index():
+    return jsonify({"message": "Chatbot API is running"}), 200
+
 
 @app.route('/chat', methods=['POST'])
 def chat():
