@@ -32,35 +32,44 @@ model.eval()
 def index():
     return jsonify({"message": "Chatbot API is running"}), 200
 
-@app.route('/chat', methods=['POST'])
+@app.route('/chat', methods=['GET', 'POST'], strict_slashes=False)
 def chat():
-    req_data = request.get_json()
-    sentence = req_data.get("message")
+    if request.method == 'GET':
+        return jsonify({"message": "Use POST method with 'message' key."}), 200
 
-    if not sentence:
-        return jsonify({"error": "Missing message"}), 400
+    try:
+        req_data = request.get_json()
+        print("Received request:", req_data)
 
-    # Preprocess input
-    sentence_tokens = tokenize(sentence)
-    X = bag_of_words(sentence_tokens, all_words)
-    X = X.reshape(1, X.shape[0])
-    X = torch.from_numpy(X).to(device)
+        sentence = req_data.get("message")
+        if not sentence:
+            return jsonify({"error": "Missing message"}), 400
 
-    # Model prediction
-    output = model(X)
-    _, predicted = torch.max(output, dim=1)
-    tag = tags[predicted.item()]
+        # Preprocess input
+        sentence_tokens = tokenize(sentence)
+        X = bag_of_words(sentence_tokens, all_words)
+        X = X.reshape(1, X.shape[0])
+        X = torch.from_numpy(X).to(device)
 
-    probs = torch.softmax(output, dim=1)
-    prob = probs[0][predicted.item()]
+        # Model prediction
+        output = model(X)
+        _, predicted = torch.max(output, dim=1)
+        tag = tags[predicted.item()]
 
-    if prob.item() > 0.75:
-        for intent in intents['intents']:
-            if tag == intent['tag']:
-                response = random.choice(intent['responses'])
-                return jsonify({"bot": response})
-    else:
-        return jsonify({"bot": "I don't understand..."})
+        probs = torch.softmax(output, dim=1)
+        prob = probs[0][predicted.item()]
+
+        if prob.item() > 0.75:
+            for intent in intents['intents']:
+                if tag == intent['tag']:
+                    response = random.choice(intent['responses'])
+                    return jsonify({"bot": response})
+        else:
+            return jsonify({"bot": "I don't understand..."})
+    except Exception as e:
+        print("Error:", str(e))
+        return jsonify({"error": "Internal server error", "details": str(e)}), 500
+
 
 import os
 
