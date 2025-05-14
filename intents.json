@@ -44,6 +44,127 @@
       ]
     },
     {
+      "tag": "college_established",
+      "patterns": [
+        "When was PCCOE established?",
+        "What type of institution is PCCOE?",
+        "Is PCCOE affiliated to any university?"
+      ],
+      "responses": [
+        "PCCOE was established in 1999 and is a private, autonomous engineering college affiliated with Savitribai Phule Pune University (SPPU)."
+      ]
+    },
+    {
+      "tag": "campus_info",
+      "patterns": [
+        "What is the campus size of PCCOE?",
+        "How many students are there at PCCOE?",
+        "Tell me about the PCCOE campus."
+      ],
+      "responses": [
+        "The PCCOE campus spans 13 acres and accommodates around 4,000 students."
+      ]
+    },
+    {
+      "tag": "undergraduate_programs",
+      "patterns": [
+        "What B.Tech courses are offered at PCCOE?",
+        "Which undergraduate programs are available at PCCOE?",
+        "Tell me about PCCOE's engineering programs."
+      ],
+      "responses": [
+        "PCCOE offers B.Tech in Computer Engineering, Mechanical, E&TC, IT, Civil, Computer Engineering (Regional Language), and CSE (AI-ML)."
+      ]
+    },
+    {
+      "tag": "postgraduate_programs",
+      "patterns": [
+        "Which M.Tech courses are offered?",
+        "Does PCCOE have postgraduate engineering programs?",
+        "Tell me about M.Tech at PCCOE."
+      ],
+      "responses": [
+        "M.Tech programs at PCCOE include Computer Engineering, VLSI & Embedded, Design & Computational Mechanics, AI & Data Science, and Construction Management."
+      ]
+    },
+    {
+      "tag": "other_programs",
+      "patterns": [
+        "Are there other courses apart from B.Tech and M.Tech?",
+        "Does PCCOE offer MCA?",
+        "Tell me about B.Voc programs at PCCOE."
+      ],
+      "responses": [
+        "PCCOE also offers MCA and B.Voc programs in IoT, Mechatronics, Refrigeration & AC, and Solar Energy."
+      ]
+    },
+    {
+      "tag": "btech_admission",
+      "patterns": [
+        "How to get admission in B.Tech at PCCOE?",
+        "What is the B.Tech admission process?",
+        "Which entrance exams are accepted for PCCOE?"
+      ],
+      "responses": [
+        "Admissions to B.Tech at PCCOE are based on MHT CET or JEE Main scores through the CAP process."
+      ]
+    },
+    {
+      "tag": "pg_admission",
+      "patterns": [
+        "How are M.Tech admissions done?",
+        "Admission process for MCA at PCCOE?",
+        "Is GATE required for M.Tech?"
+      ],
+      "responses": [
+        "M.Tech requires GATE scores, and MCA admissions are based on MAH MCA CET."
+      ]
+    },
+    {
+      "tag": "international_admission",
+      "patterns": [
+        "Can foreign nationals apply?",
+        "Do NRIs get admission in PCCOE?",
+        "How are international admissions handled?"
+      ],
+      "responses": [
+        "Yes, PCCOE admits Foreign Nationals, NRIs, OCIs, and children of Gulf workers through a special admission process."
+      ]
+    },
+    {
+      "tag": "placements",
+      "patterns": [
+        "What are the placement stats at PCCOE?",
+        "Tell me about placements in PCCOE.",
+        "Highest package at PCCOE?"
+      ],
+      "responses": [
+        "In 2025, the highest package was \u20b960.34 LPA, average \u20b96.01 LPA. In 2024, highest was \u20b922 LPA, average \u20b96.54 LPA."
+      ]
+    },
+    {
+      "tag": "recruiters",
+      "patterns": [
+        "Which companies recruit from PCCOE?",
+        "Who are the top recruiters at PCCOE?",
+        "Placement companies at PCCOE?"
+      ],
+      "responses": [
+        "Top recruiters include Accenture, Informatica, MediaOcean, ThoughtWorks, Dassault, Cummins, and many more."
+      ]
+    },
+    {
+      "tag": "ranking",
+      "patterns": [
+        "What is PCCOE ranked?",
+        "Is PCCOE a top college?",
+        "PCCOE ranking?"
+      ],
+      "responses": [
+        "PCCOE is considered among the top engineering colleges in Pune with national level recognition."
+      ]
+    },
+    {
       "tag": "college_location",
       "patterns": [
         "Where is the college located?",
@@ -52,23 +173,18 @@
         "Location of the campus"
       ],
       "responses": [
-        "The college is located at 123 College Street, Cityname.",
-        "You can find the campus at 123 College Street, just off Main Road.",
-        "The college is situated in the center of Cityname at 123 College Street."
+        "The college is located at Sector 26, Pradhikaran, Nigdi, Pune - 411044."
       ]
     },
     {
-      "tag": "admin_office",
+      "tag": "contact_info",
       "patterns": [
-        "Where is the admin office?",
-        "How can I reach administration?",
-        "Location of the admin office",
-        "Administration office details"
+        "How to contact PCCOE?",
+        "What is the email of PCCOE?",
+        "Phone number of the college?"
       ],
       "responses": [
-        "The admin office is located in the main building, Room 101.",
-        "You can find the admin office on the ground floor of the central block.",
-        "Administration is in Room 101, near the main entrance."
+        "Phone: +91 - 8087174347, Email: pccoeadmin@gmail.com, Website: www.pccoepune.com"
       ]
     }
   ]
