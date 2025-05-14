@@ -3,151 +3,72 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi", "Hello", "Hey there", "Good morning", "Good evening", "What's up?", "Howdy", "Yo", "Hey!", "What's going on?"
+        "Hi",
+        "Hello",
+        "Hey",
+        "What's up?",
+        "Good morning"
       ],
       "responses": [
-        "Hello! How can I assist you about PCCOE?", 
-        "Hi there! Ask me anything about PCCOE.", 
-        "Hey! How can I help you today?"
+        "Hello! How can I help you?",
+        "Hi there! What can I do for you?",
+        "Hey! How may I assist you today?"
       ]
     },
     {
       "tag": "goodbye",
       "patterns": [
-        "Bye", "See you", "Goodbye", "Catch you later", "Take care", "Farewell", "I'm leaving now", "Talk to you soon", "Have a good day"
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Catch you later"
       ],
       "responses": [
-        "Goodbye! Have a great day!", 
-        "See you later! Reach out if you need anything else.", 
-        "Take care! I'm here if you need me again."
+        "Goodbye! Have a great day!",
+        "See you later!",
+        "Take care!"
       ]
     },
     {
       "tag": "thanks",
       "patterns": [
-        "Thanks", "Thank you", "That's helpful", "Appreciate it", "Much appreciated", "Thanks a lot", "Thank you so much", "I appreciate your help", "You rock!"
+        "Thanks",
+        "Thank you",
+        "I appreciate it",
+        "Much appreciated"
       ],
       "responses": [
-        "You're welcome!", 
-        "Glad to help!", 
-        "Anytime! Let me know if you need anything else."
-      ]
-    },
-    {
-      "tag": "college_info",
-      "patterns": [
-        "What is PCCOE?", "Tell me about PCCOE", "What does PCCOE stand for?", "What kind of college is PCCOE?", "Can you tell me more about PCCOE?", "Is PCCOE a good college?", "What are the features of PCCOE?"
-      ],
-      "responses": [
-        "PCCOE stands for Pimpri Chinchwad College of Engineering, established in 1999 in Nigdi, Pune. It's a top private engineering college affiliated with Savitribai Phule Pune University."
+        "You're welcome!",
+        "No problem!",
+        "Happy to help!"
       ]
     },
     {
       "tag": "college_location",
       "patterns": [
-        "Where is PCCOE located?", "What is the address of PCCOE?", "College location?", "How to reach PCCOE?", "PCCOE campus address?", "Where can I find PCCOE?", "Give me the location of PCCOE"
+        "Where is the college located?",
+        "College address",
+        "How do I reach the college?",
+        "Location of the campus"
       ],
       "responses": [
-        "PCCOE is located in Sector 26, Pradhikaran, Nigdi, Pune - 411044. It's easily accessible from different parts of Pune."
+        "The college is located at 123 College Street, Cityname.",
+        "You can find the campus at 123 College Street, just off Main Road.",
+        "The college is situated in the center of Cityname at 123 College Street."
       ]
     },
     {
-      "tag": "courses_offered",
+      "tag": "admin_office",
       "patterns": [
-        "What courses does PCCOE offer?", "List of programs at PCCOE", "What branches are available?", "Available B.Tech courses?", "Which engineering courses are available?", "What courses can I study at PCCOE?", "Can I study Computer Science at PCCOE?"
+        "Where is the admin office?",
+        "How can I reach administration?",
+        "Location of the admin office",
+        "Administration office details"
       ],
       "responses": [
-        "PCCOE offers B.Tech programs in Computer Engineering, Mechanical Engineering, Information Technology, Civil Engineering, AI-ML, Electronics & Telecommunication, and more. It also offers M.Tech, MCA, and B.Voc programs."
-      ]
-    },
-    {
-      "tag": "admission_process",
-      "patterns": [
-        "How can I get admission?", "What is the admission process?", "Admission criteria?", "What is required for admission?", "How do I apply for admission?", "Tell me about the admission procedure", "Is there an entrance exam for admission?"
-      ],
-      "responses": [
-        "Admission to B.Tech is based on MHT CET or JEE Main scores through the CAP process. For M.Tech, you need a valid GATE score, and for MCA, the MAH MCA CET is required."
-      ]
-    },
-    {
-      "tag": "eligibility",
-      "patterns": [
-        "What is the eligibility for B.Tech?", "Minimum marks for admission", "Am I eligible for PCCOE?", "What is the cut-off for Computer Engineering?", "Eligibility for admission to PCCOE", "Do I need JEE scores for B.Tech?"
-      ],
-      "responses": [
-        "You must have completed 12th with Physics, Chemistry, and Mathematics (PCM). For B.Tech admission, a valid MHT CET or JEE Main score is required."
-      ]
-    },
-    {
-      "tag": "placement_stats",
-      "patterns": [
-        "How are the placements?", "Placement stats of PCCOE", "Average package", "Highest package", "What is the average salary offered?", "Can you tell me the placement details?", "How many students were placed last year?"
-      ],
-      "responses": [
-        "In 2025, the highest package was ₹60.34 LPA and the average was ₹6.01 LPA. Notable recruiters include Accenture, ThoughtWorks, Informatica, and many more."
-      ]
-    },
-    {
-      "tag": "recruiters",
-      "patterns": [
-        "Which companies visit PCCOE?", "Top recruiters?", "Who hires from PCCOE?", "What companies come to PCCOE for placement?", "Can you list some recruiters at PCCOE?", "Which firms recruit from PCCOE?"
-      ],
-      "responses": [
-        "Top recruiters at PCCOE include Accenture, Informatica, ThoughtWorks, MediaOcean, Dassault, Cummins, and many others."
-      ]
-    },
-    {
-      "tag": "faculty",
-      "patterns": [
-        "How is the faculty?", "Is the teaching good?", "Quality of professors at PCCOE?", "Tell me about the faculty?", "What is the teaching experience at PCCOE?", "Do professors have good qualifications?"
-      ],
-      "responses": [
-        "PCCOE has a highly experienced and qualified faculty, many of whom hold PhDs and have a strong background in both teaching and industry experience."
-      ]
-    },
-    {
-      "tag": "infrastructure",
-      "patterns": [
-        "How is the campus?", "Does PCCOE have good infrastructure?", "Facilities at PCCOE?", "What kind of facilities are available?", "Tell me about the campus infrastructure", "Is there Wi-Fi in the campus?", "Does PCCOE have a library?"
-      ],
-      "responses": [
-        "PCCOE offers modern labs, smart classrooms, a well-stocked library, sports facilities, hostels, and Wi-Fi across campus."
-      ]
-    },
-    {
-      "tag": "hostel_facility",
-      "patterns": [
-        "Is hostel available?", "Do you have hostels?", "Hostel details at PCCOE?", "Can I stay in a hostel?", "Is there a hostel for girls and boys?", "How to apply for the hostel?"
-      ],
-      "responses": [
-        "Yes, PCCOE provides separate hostels for boys and girls with dining facilities, Wi-Fi, 24/7 security, and easy access to campus."
-      ]
-    },
-    {
-      "tag": "contact_info",
-      "patterns": [
-        "How to contact the college?", "What is the phone number of PCCOE?", "Email address of PCCOE?", "Can you give me contact details?", "How can I reach the college?", "What is the official email?"
-      ],
-      "responses": [
-        "You can contact PCCOE at +91 - 8087174347 or email pccoeadmin@gmail.com. For more details, visit www.pccoepune.com."
-      ]
-    },
-    {
-      "tag": "cutoff",
-      "patterns": [
-        "What is the cutoff for Computer Engineering?", "Cutoff for Mechanical?", "Branch-wise cutoff?", "What is the required rank?", "What percentile is needed for admission?", "Tell me the cutoff details"
-      ],
-      "responses": [
-        "Cutoffs vary every year depending on MHT CET ranks and seat availability. Computer Engineering typically has a high cutoff of around 95 percentile."
-      ]
-    },
-    {
-      "tag": "events",
-      "patterns": [
-        "Does PCCOE host events?", "Any tech fests?", "College cultural activities?", "What events happen at PCCOE?", "Can you tell me about college events?", "Is there a fest at PCCOE?"
-      ],
-      "responses": [
-        "Yes, PCCOE regularly hosts tech fests like *Techlligent*, cultural events, workshops, and seminars."
+        "The admin office is located in the main building, Room 101.",
+        "You can find the admin office on the ground floor of the central block.",
+        "Administration is in Room 101, near the main entrance."
       ]
     }
   ]
